@@ -17,6 +17,12 @@ fieldset{
     @include reset_space()
 }
 
+// p{
+//     font-family: $voll;
+// }
+// h1,h2,h3,h4,h5,h6{
+//     font-family: $mont;
+// }
 ul{
     list-style-type: none;
 }
@@ -26,3 +32,25 @@ a{
 button,fieldset{
     @include reset_outline()
 }
+.container{
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+}
+
+.button{
+    box-sizing: border-box;
+    display: block;
+    font-family: $fira;
+    cursor: pointer;
+    &:active{
+        border-color: $brd;
+        color: rgba(255, 255, 255, 0.781);
+    }
+}
+.button_border_red{
+    border: 5px $rd solid;
+    background: none;
+    color: $wt;
+    letter-spacing: 1.6px;
+}
+

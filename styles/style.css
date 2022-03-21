@@ -25,4 +25,94 @@ button, fieldset {
   outline: 0;
 }
 
+.container {
+  max-width: calc(100% - 60px);
+  margin: 0 auto;
+}
+
+.button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  font-family: "Fira Mono", monospace;
+  cursor: pointer;
+}
+.button:active {
+  border-color: #fa00009c;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.button_border_red {
+  border: 5px #FA0001 solid;
+  background: none;
+  color: #fff;
+  letter-spacing: 1.6px;
+}
+
+.header {
+  padding: 32px 0 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Fira Mono", monospace;
+}
+.header__logo-image {
+  margin-bottom: 86px;
+}
+.header__logo-text {
+  color: #FA0001;
+  font-family: "Montserrat Alternates", sans-serif;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 36px;
+  height: 767px;
+  margin-left: 9px;
+}
+.header__main-headline {
+  margin-top: 122px;
+}
+.header__headline {
+  margin-bottom: 34px;
+}
+.header__headline-text {
+  font-size: 144px;
+  line-height: 144px;
+}
+.header__headline-text_dark-gray {
+  color: #ffffff0a;
+  margin-left: 86px;
+}
+.header__headline-text_gray {
+  color: #ffffff2e;
+}
+.header__headline-text_white {
+  color: #fff;
+  margin-left: 94px;
+}
+.header__button {
+  font-size: 36px;
+  position: relative;
+  left: 187px;
+  padding: 10px 0;
+  width: 416px;
+}
+.header__navigation-list {
+  text-align: right;
+}
+.header__links {
+  color: #fff;
+  font-size: 36px;
+  line-height: 60px;
+}
+.header__links:hover {
+  color: rgba(255, 255, 255, 0.767);
+}
+.header__links:active {
+  color: rgba(255, 255, 255, 0.596);
+}
+
 /*# sourceMappingURL=style.css.map */
