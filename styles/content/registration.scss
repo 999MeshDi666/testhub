@@ -1,0 +1,12 @@
+.registration{
+    display: flex;
+    justify-content: space-between;
+
+    &__subtitle{
+        width: 522px;
+        height: 200px;
+    }
+    &__form{
+        margin-top: 47px;
+    }
+}

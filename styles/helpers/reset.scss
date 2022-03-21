@@ -6,8 +6,13 @@
     border: 0;
     outline: 0;  
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: $mtbc;
+    font-size: 36px;
+    color: $wt;
 }
 body,
 h1,h2,h3,h4,h5,h6,
@@ -28,19 +33,20 @@ ul{
 }
 a{
     text-decoration: none;
+    color: $wt;
 }
 button,fieldset{
     @include reset_outline()
 }
 .container{
-    max-width: calc(100% - 60px);
+    max-width: calc(100% - 120px);
     margin: 0 auto;
 }
 
 .button{
     box-sizing: border-box;
     display: block;
-    font-family: $fira;
+    text-align: center;
     cursor: pointer;
     &:active{
         border-color: $brd;
@@ -53,4 +59,13 @@ button,fieldset{
     color: $wt;
     letter-spacing: 1.6px;
 }
-
+.title{
+    margin-bottom: 78px;
+    font-family: $mont;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.subtitle{
+ 
+    margin-bottom: 42px;
+}

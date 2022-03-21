@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     font-family: $fira;
-   
+    user-select: none;
     
     &__logo-image {
         margin-bottom: 86px;
@@ -12,7 +12,7 @@
         color: $rd;
         font-family: $mont;
         writing-mode: vertical-rl;
-        font-size: 36px;
+        
         height: 767px;
         margin-left: 9px;
     }
@@ -35,23 +35,19 @@
         color: #ffffff2e;
     }
     &__headline-text_white{
-        color: #fff;
+ 
         margin-left: 94px;
     }
     &__button{
-        font-size: 36px;
         position: relative;
         left: 187px;
         padding: 10px 0;
         width: 416px;
-        
     }
     &__navigation-list{
         text-align: right;
     }
     &__links{
-        color: $wt;
-        font-size: 36px;
         line-height: 60px;
         &:hover{
             color: rgba(255, 255, 255, 0.767);
