@@ -1,0 +1,28 @@
+@mixin reset_space {
+    padding: 0;
+    margin: 0;
+}
+@mixin reset_outline {
+    border: 0;
+    outline: 0;  
+}
+body{
+    background-color: $mtbc;
+}
+body,
+h1,h2,h3,h4,h5,h6,
+p,
+ul,li,
+fieldset{
+    @include reset_space()
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+button,fieldset{
+    @include reset_outline()
+}
