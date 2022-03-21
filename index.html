@@ -44,72 +44,77 @@
             </div>
             <form action="#" method="post" class="form registration__form">
                 <fieldset class="form__fieldset">
-                    <label for="#fio">ФИО</label>
-                    <input type="text" name="fio" id="#fio" required>
+                    <label for="#fio" class="form__label">ФИО</label>
+                    <input type="text" name="fio" id="#fio" required class="form__input form__input_size_l">
                 </fieldset>
                 <fieldset  class="form__fieldset">
-                    <label for="#email">Почта</label>
-                    <input type="email" name="email" id="#email" required>
+                    <label for="#email" class="form__label">Почта</label>
+                    <input type="email" name="email" id="#email" required class="form__input form__input_size_l">
                 </fieldset>
                 <fieldset  class="form__fieldset">
-                    <label for="#tel">Телефон с телеграм</label>
-                    <input type="tel" name="tel" id="#tel" required>
+                    <label for="#tel" class="form__label">Телефон с телеграм</label>
+                    <input type="tel" name="tel" id="#tel" required class="form__input form__input_size_l">
                 </fieldset>
-                <div class="">
+                <div class="form__spec-year">
                     <fieldset  class="form__fieldset">
-                        <label for="#spec">Специальность</label>
-                        <input type="text" name="spec" id="#spec" required>
+                        <label for="#spec" class="form__label">Специальность</label>
+                        <input type="text" name="spec" id="#spec" required class="form__input form__input_size_m">
                     </fieldset>
                     <fieldset  class="form__fieldset">
-                        <label for="#course">Курс</label>
-                        <select name="course" id="#course">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                        <label for="#course" class="form__label">Курс</label>
+                        <select name="course" id="#course" class="form__input form__select form__input_size_s">
+                            <option value="1" class="form__options">1</option>
+                            <option value="2" class="form__options">2</option>
+                            <option value="3" class="form__options">3</option>
+                            <option value="4" class="form__options">4</option>
                         </select>
                     </fieldset>
                 </div>
                 <fieldset  class="form__fieldset">
-                    <label>В какие сообщества хотите вступить?</label>
-                    <div class="hub_section" >
-                        <fieldset>
-                            <label for=""></label>
-                            <input type="radio" name="" id="">
-                        </fieldset>
-                        <fieldset>
-                            <label for=""></label>
-                            <input type="radio" name="" id="">
-                        </fieldset>
-                        <fieldset>
-                            <label for=""></label>
-                            <input type="radio" name="" id="">
-                        </fieldset>
-                        <fieldset>
-                            <label for=""></label>
-                            <input type="radio" name="" id="">
-                        </fieldset>
-                        <fieldset>
-                            <label for=""></label>
-                            <input type="radio" name="" id="">
-                        </fieldset>
+                    <label class="form__label">В какие сообщества хотите вступить?</label>
+                    <div class="form__hub-section">
+                        <span class="form__container">
+                            <input type="checkbox" name="hub" id="#DEV" value="DEV" class="form__check">
+                            <label for="#DEV" class="form__input form__check-button">DEV.HUB</label>
+                            
+                        </span>
+                        <span class="form__container">
+                            <input type="checkbox" name="hub" id="#HARD" value="HARD" class="form__check">
+                            <label for="#HARD" class="form__input form__check-button">HARD.HUB</label>
+                            
+                        </span>
+                        <span class="form__container">
+                            <input type="checkbox" name="hub" id="#SOC" value="SOC" class="form__check">
+                            <label for="#SOC" class="form__input form__check-button">SOC.HUB</label>
+                            
+                        </span>
+                        <span class="form__container">
+                            <input type="checkbox" name="hub" id="#ART" value="ART" class="form__check">
+                            <label for="#ART" class="form__input form__check-button">ART.HUB</label>
+                            
+                        </span>
+                        <span class="form__container">
+                            <input type="checkbox" name="hub" id="#GEEK" value="GEEK" class="form__check">
+                            <label for="#GEEK" class="form__input form__check-button">GEEK.HUB</label>
+                            
+                        </span>
                     </div>
                 </fieldset>
                 <fieldset  class="form__fieldset">
-                    <label for="#about_u">Немного о себе</label>
-                    <textarea name="" id="#about_u" cols="30" rows="10"></textarea>
+                    <label for="#about_u" class="form__label">Немного о себе</label>
+                    <textarea name="" id="#about_u" cols="30" rows="10" class="form__input form__textarea"></textarea>
                 </fieldset>
-                <fieldset  class="form__fieldset">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Согласен на <a href="">обработку персональных данных</a></label>
+                <fieldset  class="form__accept-info">
+                    <span class="form__check-accept">
+                        <label for="#conf_info" class="form__label-accept"></label>
+                        <input type="checkbox" name="conf_info" id="#conf_info" class="form__check" value="yes">
+                    </span>
+                    <label for="#conf_info" class="form__label form__label-info">Согласен на <a href="#" class="form__label-link">обработку персональных данных</a></label>
                 </fieldset>
+                <input type="submit" value="Вступить" class="button button_border_red form__button">
             </form>
-
-
         </article>
-
     </div>
-   
-    
+    <script src = "scripts/main.js"></script>
 </body>
 </html>

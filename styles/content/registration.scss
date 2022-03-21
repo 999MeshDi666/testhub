@@ -10,3 +10,114 @@
         margin-top: 47px;
     }
 }
+
+.form{
+    user-select: none;
+    font-family: $rbt;
+    &__fieldset{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 46px;
+    }
+    &__label{
+        font-weight: 300;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    &__input{
+        color: $wt;
+        border: 1px #C4C4C4 solid;
+        padding: 0 6px;
+        box-sizing: border-box;
+        background: none;
+        font-size: 20px;
+        margin-right: 17px;
+    }
+    &__input_size_l{
+        width: 520px;
+        height: 65px;
+    }
+    &__input_size_m{
+        width: 420px;
+        height: 65px;
+    }
+    &__input_size_s{
+        width: 150px;
+        height: 65px;
+    }
+    &__spec-year{
+        display: flex;
+    }
+    &__options{
+        color: $bc;
+    }
+    &__hub-section{
+        width: 620px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__check{
+        visibility: hidden;
+    }
+    &__check-button{
+        cursor: pointer;
+        padding: 31px 41px;
+        // &:checked {
+        //     border-color: 1px $rd solid;
+        // }
+        &:hover{
+            border-color: rgb(255, 255, 255);
+        }
+        
+    }
+    .checked__section{
+        border-color: $rd;
+    }
+    &__textarea{
+        resize: none;
+        height: 217px;
+    }
+    &__accept-info{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    &__check-accept{
+        display: flex;
+    }
+  
+    &__label-accept{
+        display: block;
+        border: 1px $wt solid; 
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        
+    
+    }
+    &__label-link{
+        text-decoration: underline;
+    }
+    .checked__img{
+        border: 1px #F14635 solid; 
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../images/checked.png');  
+    }
+    &__label-info{
+        font-size: 18px;
+    }
+    &__button{
+        width: 300px;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    
+    
+
+}
