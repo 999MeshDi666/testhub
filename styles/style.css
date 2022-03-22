@@ -37,7 +37,7 @@ textarea {
 }
 
 .container {
-  max-width: calc(100% - 120px);
+  max-width: calc(100% - 80px);
   margin: 0 auto;
 }
 
@@ -256,21 +256,26 @@ textarea {
   height: 20px;
   cursor: pointer;
 }
-.form__label-link {
-  text-decoration: underline;
+.form__label-link::after {
+  content: '';
+  display: block;
+  margin-left: 106px;
+  width: 277px;
+  height: 2px;
+  background-color: #fff;
 }
 .form .checked__img {
   border: 1px #F14635 solid;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../images/checked.png");
 }
 .form__label-info {
   font-size: 18px;
 }
 .form__button {
-  width: 300px;
+  width: 284px;
   font-size: 24px;
   padding: 20px;
 }

@@ -99,20 +99,30 @@
     
     }
     &__label-link{
-        text-decoration: underline;
+        &::after{
+            content: '';
+            display: block;
+            margin-left: 106px;
+            width: 277px;
+            height: 2px;
+            background-color: #fff;
+        }
+        
     }
     .checked__img{
         border: 1px #F14635 solid; 
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-image: url('../images/checked.png');  
+        // background-color: #F14635;
+        // border: 0;
     }
     &__label-info{
         font-size: 18px;
     }
     &__button{
-        width: 300px;
+        width: 284px;
         font-size: 24px;
         padding: 20px;
     }
